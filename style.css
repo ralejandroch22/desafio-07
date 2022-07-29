@@ -23,6 +23,10 @@ header nav .menu {
     color: rgb(227, 226, 226);
 }
 
+footer {
+    margin-top: 50px;
+}
+
 /* Animacion */
 
 .menu a:hover {

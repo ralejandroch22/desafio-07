@@ -91,6 +91,56 @@
         </div> -->
 
         <!-- Formulario con Bootstrap -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        </div>
+
+                        <label for="" class=" form-label">Pais</label>
+
+                        <select class="form-select" aria-label="pais">
+                            <option selected>Selecciona país</option>
+                            <option value="1">Argentina</option>
+                            <option value="2">Brasil</option>
+                            <option value="3">Colombia</option>
+                            <option value="4">Chile</option>
+                            <option value="5">Venezuela</option>
+                        </select>
+
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="asunto">
+                        </div>
+                        <div>
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+
+                        <div class="mb-3 form-check">
+
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="aceptar-terminos">Acepto los términos y
+                                condiciones</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Formulario</button>
+                        <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </main>
 
