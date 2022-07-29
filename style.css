@@ -8,7 +8,14 @@ body {
     line-height: 1.5;
 }
 
-header nav .menu {
+header h1 {
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+
+/* header nav .menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,10 +24,18 @@ header nav .menu {
     padding: 40px;
     font-size: 1.2rem;
 }
-
 .menu a {
     text-decoration: none;
     color: rgb(227, 226, 226);
+} */
+
+main {
+    margin-top: 40px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 footer {
@@ -95,50 +110,50 @@ footer p {
 
 /* Agenda */
 table {
-    border: solid 5px rgb(0, 0, 0);
+    border: solid 5px rgba(255, 255, 255, 0.305);
 }
 
 /* Auspiciantes */
-.contenedor-auspiciantes {
+/* .contenedor-auspiciantes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-}
+} */
 
-.contenedor-auspiciantes div {
+.auspiciantes div {
     text-align: center;
     margin: auto;
 }
 
 /* Animacion */
-.contenedor-auspiciantes div:hover img {
+.auspiciantes div:hover img {
     transition: 0.5s ease;
     box-shadow: 0 0 15px rgb(227, 226, 226);
 }
 
-.contenedor-auspiciantes div:hover p {
+.auspiciantes div:hover p {
     transition: 0.5s ease;
     text-shadow: 0 0 15px rgb(227, 226, 226);
 }
 
 /* Oradores */
-.contenedor-oradores {
+/* .contenedor-oradores {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-}
+} */
 
-.contenedor-oradores div {
+.oradores div {
     text-align: center;
     margin: auto;
 }
 
 /* Animacion */
-.contenedor-oradores div:hover img {
+.oradores div:hover img {
     transition-duration: 0.5s;
     box-shadow: 0 0 15px rgb(227, 226, 226);
 }
 
-.contenedor-oradores div:hover p {
+.oradores div:hover p {
     transition-duration: 0.5s;
     text-shadow: 0 0 15px rgb(227, 226, 226);
 }
