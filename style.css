@@ -1,0 +1,168 @@
+/* Generales */
+body {
+    color: rgb(227, 226, 226);
+    background-color: rgb(27, 27, 27);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+header nav .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 40px;
+    font-size: 1.2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(227, 226, 226);
+}
+
+/* Animacion */
+
+.menu a:hover {
+    text-shadow: 0 0 15px rgb(227, 226, 226);
+    transition: 0.5s ease;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 40px;
+}
+
+/* Index */
+
+.contenedor {
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    grid-template-areas:
+        "titulo-intro centro"
+        "texto-intro centro"
+    ;
+}
+
+.titulo-intro {
+    grid-area: titulo-intro;
+    text-align: center;
+}
+
+.texto-intro {
+    grid-area: texto-intro;
+    text-align: center;
+}
+
+.centro {
+    grid-area: centro;
+    display: inline-block;
+    background-image: url("img/fondo-trabajo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 225px;
+    padding-bottom: 225px;
+    border-radius: 10px;
+    margin: 25px;
+}
+
+.centro-interno {
+    background-color: rgba(27, 27, 27, 0.833);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+/* Agenda */
+table {
+    border: solid 5px rgb(0, 0, 0);
+}
+
+/* Auspiciantes */
+.contenedor-auspiciantes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.contenedor-auspiciantes div {
+    text-align: center;
+    margin: auto;
+}
+
+/* Animacion */
+.contenedor-auspiciantes div:hover img {
+    transition: 0.5s ease;
+    box-shadow: 0 0 15px rgb(227, 226, 226);
+}
+
+.contenedor-auspiciantes div:hover p {
+    transition: 0.5s ease;
+    text-shadow: 0 0 15px rgb(227, 226, 226);
+}
+
+/* Oradores */
+.contenedor-oradores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contenedor-oradores div {
+    text-align: center;
+    margin: auto;
+}
+
+/* Animacion */
+.contenedor-oradores div:hover img {
+    transition-duration: 0.5s;
+    box-shadow: 0 0 15px rgb(227, 226, 226);
+}
+
+.contenedor-oradores div:hover p {
+    transition-duration: 0.5s;
+    text-shadow: 0 0 15px rgb(227, 226, 226);
+}
+
+/* Responsive */
+@media screen and (max-width: 1360px) {
+    .centro {
+        margin: 60px;
+    }
+
+    .centro-interno {
+        margin: 90px;
+    }
+
+    .contenedor {
+        grid-template-areas:
+            "titulo-intro"
+            "texto-intro"
+            "centro"
+        ;
+    }
+
+    .contenedor-auspiciantes {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .contenedor-oradores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
